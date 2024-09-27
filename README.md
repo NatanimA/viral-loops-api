@@ -1,87 +1,282 @@
-# Node Express Mongo TypeScript Starter Kit
+<a name="readme-top"></a>
 
-This is a starter kit for building Node.js applications with Express, MongoDB, and TypeScript. It provides a solid foundation for quickly setting up a Node.js server with TypeScript support and MongoDB integration.
 
-## Features and Included Libraries
 
-This starter kit comes with a variety of features and includes several essential libraries to help you kickstart your Node.js project. Here's an overview of the key features and libraries included:
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="faviconV2.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-- **ExpressJS**: The foundation of the application, Express is a fast and minimalist web framework for Node.js, making it easy to build robust and scalable APIs.
+  <h3><b>Viral Loops</b></h3>
 
-- **Mongoose**: Mongoose is used as the MongoDB client, providing an elegant way to interact with MongoDB databases and define data schemas.
+</div>
 
-- **axios**: Axios is included for making HTTP requests, simplifying the process of fetching data from external sources or APIs.
+<!-- TABLE OF CONTENTS -->
 
-- **bcrypt**: This library is used for encrypting and decrypting sensitive data, such as passwords and tokens, enhancing the security of your application.
+# 📗 Table of Contents
 
-- **cors**: The `cors` npm package is included to handle Cross-Origin Resource Sharing, allowing your API to be accessed by clients from different domains.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
 
-- **helmet**: Helmet helps secure your Express apps by setting various HTTP headers to protect against common web vulnerabilities.
+<!-- PROJECT DESCRIPTION -->
 
-- **morgan**: Morgan is used for logging HTTP requests, making it easier to debug and monitor your application.
+# 📖 Viral Loops <a name="about-project"></a>
 
-- **http-errors**: The `http-errors` package simplifies the creation of HTTP error responses, improving error handling in your application.
+> Viral Loops is an innovative platform designed to streamline the creation of customizable template forms for referral marketing campaigns. With its intuitive interface and dynamic live preview feature, Viral Loops empowers marketers to craft engaging, visually appealing forms that update in real-time, allowing for instant feedback and optimization of referral program designs.
 
-- **nodemon**: Nodemon is a utility that monitors for changes in your code and automatically restarts the server during development, saving you time and effort.
+> Please view project presentation here https://app.screencastify.com/v3/watch/lLzgu30ziF9ICMO1854H
 
-- **ts-node**: TypeScript Node.js is used to execute TypeScript files directly, making it easy to write and run TypeScript code without transpiling.
 
-- **TypeScript**: TypeScript is a strongly typed superset of JavaScript that enhances code quality and provides better tooling for modern JavaScript development.
+**Viral Loops** is an innovative platform designed to streamline the creation of customizable template forms
 
-- **ESLint**: ESLint is included to enforce code style and maintainability rules, ensuring your code follows best practices and stays consistent.
+## 🛠 Built With <a name="built-with"></a>
 
-These libraries and features are carefully selected to provide you with a solid foundation for building secure, maintainable, and scalable Node.js applications with TypeScript. You can further customize and extend this starter kit to meet your specific project requirements.
+### Tech Stack <a name="tech-stack"></a>
 
-## Requirements
+> Frontend: 
+- [Frontend Repository](https://github.com/NatanimA/viral-loops)
 
-Make sure you have the following software installed on your system:
+React.js: A popular JavaScript library for building user interfaces, providing a component-based architecture for efficient development and maintenance.
+JavaScript: The primary programming language used for implementing client-side logic and interactivity.
+State Management:
 
-- [Node.js](https://nodejs.org/) - JavaScript runtime environment
-- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/) - Package managers for Node.js
-- [MongoDB CLI](https://docs.mongodb.com/manual/installation/) (optional) - If you want to connect to a MongoDB database on your local system.
+Redux: A predictable state container for JavaScript apps, used to manage the application's global state and data flow.
+Routing:
 
-## Usage
+React Router: A standard routing library for React, enabling navigation between different components and pages within the single-page application.
+Styling:
 
-Follow these steps to get started with this starter kit:
+Tailwind CSS: A utility-first CSS framework that allows for rapid UI development with pre-built classes, promoting consistency and customization.
+Notifications:
 
-1. Clone the project to your local machine:
+React-Toastify: A popular library for adding toast notifications to React applications, enhancing user feedback and interaction.
 
-   ```shell
-   git clone git@github.com:hamidyfine/node-express-mongo-ts-starter-kit.git
-   ```
+> Backend:
+- [Backend Repository](https://github.com/NatanimA/viral-loops-api)
 
-2. Navigate to the project directory:
+Express.js: A minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications.
+TypeScript: A typed superset of JavaScript that compiles to plain JavaScript, adding optional static typing and other features to enhance code quality and maintainability.
+Database:
 
-   ```shell
-   cd node-express-mongo-ts-starter-kit
-   ```
+MongoDB: A NoSQL database that provides high performance, high availability, and easy scalability, well-suited for storing and retrieving document-based data.
 
-3. Install the required dependencies using either Yarn or npm:
+> Deployment:
 
-   ```shell
-   yarn
-   # or
-   npm install
-   ```
+AWS EC2: An Amazon Web Services cloud service that provides virtual machines (VMs) and containers that can be used to run applications and services.
 
-4. Create a copy of the `.env.example` file and name it `.env`:
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
-   ```shell
-   cp .env.example .env
-   ```
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
 
-5. Configure the environment variables in the `.env` file according to your project's requirements. This file stores sensitive information like database credentials and API keys, so make sure to keep it secure.
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
+  </ul>
+</details>
 
-6. Start the development server:
+<!-- Features -->
 
-   ```shell
-   yarn dev
-   # or
-   npm run dev
-   ```
+### Key Features <a name="key-features"></a>
 
-Now, your Node.js server is up and running!
+> The Key Features are:
 
-## License
+- **Dynamic Preview**
+- **Template Building**
+- **Getting Created Templates Later on for preview**
+- **Interactive UI**
+- **Multiple Options to Select Styles and Fonts and Many More**
 
-This starter kit is available under the [MIT License](LICENSE). Feel free to use it as a foundation for your Node.js projects.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> http://35.170.84.107:3000/
+
+- [Live Demo Link](http://35.170.84.107:3000/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Please Follow this steps
+
+To get a local copy up and running, follow these steps.
+
+```sh
+git clone https://github.com/NatanimA/viral-loops-api.git
+```
+### Prerequisites
+
+In order to run this project you need:
+
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+- [typescript](https://www.typescriptlang.org/)
+
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+
+```sh
+  cd my-folder
+  git clone https://github.com/NatanimA/viral-loops-api.git
+```
+
+
+### Install
+
+Install this project with:
+
+```sh
+  cd my-project
+  npm install
+```
+
+### Usage
+
+To run the project after installing dependencies, execute the following command:
+
+
+```sh
+  npm run dev
+```
+
+
+### Run tests
+
+> No test coverages so far but to make Api requests follow this steps
+
+> Testing POST request to Save Layouts use this API URL in POST MAN or any other tool
+
+```sh
+  http://35.170.84.107:8000/api/form/
+```
+
+- Pass this JSON data to the API
+
+```json
+{
+  "title": "Customer Feedback Survey",
+  "subtitle": "We value your opinion",
+  "buttonText": "Submit Feedback",
+  "isFirstNameRequired": true,
+  "isLastNameRequired": false,
+  
+  "formBackground": "#f0f0f0",
+  "borderRadius": "10px",
+  "headingFontStyle": "Arial, sans-serif",
+  "headingFontSize": "24px",
+  "headingColor": "#333333",
+  "isHeadingBold": true,
+  "isHeadingItalic": false,
+  "isHeadingUnderlined": false,
+  "isHeadingCenter": true,
+  "subtitleFontSize": "18px",
+  "subtitleFontStyle": "Helvetica, sans-serif",
+  "subtitleColor": "#666666",
+  "buttonBackground": "#333333",
+  "isSubtitleBold": false,
+  "isSubtitleItalic": true,
+  "isSubtitleUnderlined": false,
+  "isSubtitleCenter": true,
+  "buttonColor": "#4CAF50",
+  "buttonFontSize": "16px",
+  "buttonFontStyle": "Roboto, sans-serif",
+  "isButtonBold": true,
+  "isButtonItalic": false,
+  "isButtonUnderlined": false,
+  "buttonRadius": "5px"
+}
+```
+
+- The API will return a success message if the data is saved
+
+
+> Testing GET request to Get Layouts use this API URL in POST MAN or any other tool
+
+```sh
+  http://35.170.84.107:8000/api/form/66f55376ce3de02d8918aae7
+```
+
+- The API will return a success message if the data is saved
+
+
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Natanim Abesha**
+
+- GitHub: [@githubhandle](https://github.com/NatanimA/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/natanim-abesha/)
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Features That I will be adding in the Future
+
+- [ ] **Tracking User Records when the Join the referal links**
+- [ ] **Authentication & Authorization Features**
+- [ ] **Leaderboard for Referals**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> If you like this project please give it a star on [GitHub](https://github.com/NatanimA/viral-loops-api)!
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
