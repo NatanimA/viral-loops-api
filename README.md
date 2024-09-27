@@ -153,6 +153,20 @@ Clone this repository to your desired folder:
   git clone https://github.com/NatanimA/viral-loops-api.git
 ```
 
+> Please add this in your .env file
+
+```sh
+DB_URL='mongodb+srv://neoanimofficial:h7HaikFaXj4NsW7w@viral-loops.vlomq.mongodb.net/?retryWrites=true&w=majority&appName=viral-loops'
+HOST='http://localhost'
+JWT_ACCESS_TOKEN_EXPIRATION_TIME='2h'
+JWT_ACCESS_TOKEN_SECRET='secret'
+JWT_HASH_SALT=10
+JWT_REFRESH_TOKEN_EXPIRATION_TIME='7d'
+JWT_REFRESH_TOKEN_EXPIRATION_TIME_IN_DB=2592000
+JWT_REFRESH_TOKEN_SECRET='refresh_token'
+LOG_LEVEL='tiny'
+PORT=8000
+```
 
 ### Install
 
